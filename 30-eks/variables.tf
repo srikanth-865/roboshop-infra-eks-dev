@@ -10,7 +10,7 @@ variable "eks_version" {
     default = "1.36"  #LatesVersion
 }
 
-/* variable "enable_blue" {
+/*variable "enable_blue" {
     default = true
 }
 
@@ -24,4 +24,4 @@ variable "enable_green" {
 
 variable "green_version" {
     default = "1.35"
-} */
+}*/
