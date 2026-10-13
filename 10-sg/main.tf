@@ -1,5 +1,5 @@
 module "sg" {
-    count = length(var.sg_name)
+    count = length(var.sg_name) #here we give count so it will go in list wise
     source = "git::https://github.com/srikanth-865/terraform-sg-practice.git?ref=main"
     project = var.project
     environment =  var.environment
