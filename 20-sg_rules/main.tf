@@ -64,7 +64,7 @@ resource "aws_security_group_rule" "bastion_my_public_ip" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks = ["3.237.177.111/32"] # It allows inbound SSH traffic (port 22) from a specific public IP address (3.237.177.111) to your Bastion host's security group.
+  cidr_blocks = ["${chomp(data.http.my_public_ip.response_body)}"] # It allows inbound SSH traffic (port 22) from a specific public IP address (3.237.177.111) to your Bastion host's security group.
   #source_security_group_id = local.vpn_sg_id
   security_group_id = local.bastion_sg_id
 }
