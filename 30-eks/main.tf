@@ -21,7 +21,7 @@ module "eks" {
   }
 
   # Optional
-  endpoint_public_access = false #we didnt give for public
+  endpoint_public_access = false      ##  #we didnt give for public
 
   #By default admin access will be granted for who created it module
   enable_cluster_creator_admin_permissions = true  
