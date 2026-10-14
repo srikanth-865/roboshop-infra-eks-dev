@@ -1,0 +1,809 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.6",
+  "serial": 3,
+  "lineage": "9974f596-4d3f-81d1-0a3c-1e27e802710f",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "bastion_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/bastion_sg_id",
+            "id": "/roboshop/dev/bastion_sg_id",
+            "insecure_value": "sg-067d36e1e7908d6ff",
+            "name": "/roboshop/dev/bastion_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-067d36e1e7908d6ff",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "eks_control_plane_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/eks_control_plane_sg_id",
+            "id": "/roboshop/dev/eks_control_plane_sg_id",
+            "insecure_value": "sg-071e6f2d8a20d43ad",
+            "name": "/roboshop/dev/eks_control_plane_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-071e6f2d8a20d43ad",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "eks_node_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/eks_node_sg_id",
+            "id": "/roboshop/dev/eks_node_sg_id",
+            "insecure_value": "sg-0e1d108d3b6e39781",
+            "name": "/roboshop/dev/eks_node_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-0e1d108d3b6e39781",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "mongodb_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/mongodb_sg_id",
+            "id": "/roboshop/dev/mongodb_sg_id",
+            "insecure_value": "sg-0973ba661d63dea6d",
+            "name": "/roboshop/dev/mongodb_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-0973ba661d63dea6d",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "mysql_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/mysql_sg_id",
+            "id": "/roboshop/dev/mysql_sg_id",
+            "insecure_value": "sg-0019a522518fe2d32",
+            "name": "/roboshop/dev/mysql_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-0019a522518fe2d32",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "public_alb_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/public_alb_sg_id",
+            "id": "/roboshop/dev/public_alb_sg_id",
+            "insecure_value": "sg-005e2e3b0f809c699",
+            "name": "/roboshop/dev/public_alb_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-005e2e3b0f809c699",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "rabbitmq_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/rabbitmq_sg_id",
+            "id": "/roboshop/dev/rabbitmq_sg_id",
+            "insecure_value": "sg-063d25e7d65440012",
+            "name": "/roboshop/dev/rabbitmq_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-063d25e7d65440012",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_ssm_parameter",
+      "name": "redis_sg_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ssm:us-east-1:349627593718:parameter/roboshop/dev/redis_sg_id",
+            "id": "/roboshop/dev/redis_sg_id",
+            "insecure_value": "sg-0652e212fe32f1453",
+            "name": "/roboshop/dev/redis_sg_id",
+            "region": "us-east-1",
+            "type": "String",
+            "value": "sg-0652e212fe32f1453",
+            "version": 1,
+            "with_decryption": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "value"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "http",
+      "name": "my_public_ip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/http\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "body": "103.189.90.41\n",
+            "ca_cert_pem": null,
+            "client_cert_pem": null,
+            "client_key_pem": null,
+            "id": "https://ipv4.icanhazip.com",
+            "insecure": null,
+            "method": null,
+            "request_body": null,
+            "request_headers": null,
+            "request_timeout_ms": null,
+            "response_body": "103.189.90.41\n",
+            "response_body_base64": "MTAzLjE4OS45MC40MQo=",
+            "response_headers": {
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Origin": "*",
+              "Alt-Svc": "h3=\":443\"; ma=86400",
+              "Cf-Ray": "a49ca08e5f175403-HYD",
+              "Content-Length": "14",
+              "Content-Type": "text/plain",
+              "Date": "Tue, 13 Oct 2026 07:28:22 GMT",
+              "Server": "cloudflare",
+              "Set-Cookie": "__cf_bm=u71.t0tUk5MFdGGe1kKm4gBam84DKnEneiVOmC754H0-1791876502.7791648-1.0.1.1-RfSw1FErAC6IgCqDEyf7SkQvbVwprIIf2J9vmz9WrxlGamNV2fPH0NZxHVeLTqbG4X1yRUBuv7KlZDX777M_vYHH9iis8SEzx.QSBcy0QqbSFcWjlbJQGdW266xukiH3; HttpOnly; SameSite=None; Secure; Path=/; Domain=icanhazip.com; Expires=Tue, 13 Oct 2026 07:58:22 GMT"
+            },
+            "retry": null,
+            "status_code": 200,
+            "url": "https://ipv4.icanhazip.com"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "bastion_my_public_ip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": [
+              "103.189.90.41/32"
+            ],
+            "description": null,
+            "from_port": 22,
+            "id": "sgrule-547302383",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-067d36e1e7908d6ff",
+            "security_group_rule_id": "sgr-0d0e52249600cf4eb",
+            "self": false,
+            "source_security_group_id": null,
+            "timeouts": null,
+            "to_port": 22,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.http.my_public_ip"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "eks_control_plane_bastion",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 443,
+            "id": "sgrule-3595070351",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-071e6f2d8a20d43ad",
+            "security_group_rule_id": "sgr-05bd7675cf93f2eae",
+            "self": false,
+            "source_security_group_id": "sg-067d36e1e7908d6ff",
+            "timeouts": null,
+            "to_port": 443,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.aws_ssm_parameter.eks_control_plane_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "eks_control_plane_eks_node",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 0,
+            "id": "sgrule-3946163565",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "-1",
+            "region": "us-east-1",
+            "security_group_id": "sg-071e6f2d8a20d43ad",
+            "security_group_rule_id": "sgr-0ef891e6f5030a0f4",
+            "self": false,
+            "source_security_group_id": "sg-0e1d108d3b6e39781",
+            "timeouts": null,
+            "to_port": 0,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.eks_control_plane_sg_id",
+            "data.aws_ssm_parameter.eks_node_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "eks_node_eks_control_plane",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 0,
+            "id": "sgrule-1236043269",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "-1",
+            "region": "us-east-1",
+            "security_group_id": "sg-0e1d108d3b6e39781",
+            "security_group_rule_id": "sgr-0eb5a107bc3b9d012",
+            "self": false,
+            "source_security_group_id": "sg-071e6f2d8a20d43ad",
+            "timeouts": null,
+            "to_port": 0,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.eks_control_plane_sg_id",
+            "data.aws_ssm_parameter.eks_node_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "eks_node_vpc",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": [
+              "10.0.0.0/16"
+            ],
+            "description": null,
+            "from_port": 0,
+            "id": "sgrule-2331850153",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "-1",
+            "region": "us-east-1",
+            "security_group_id": "sg-0e1d108d3b6e39781",
+            "security_group_rule_id": "sgr-0df678b87f53d9327",
+            "self": false,
+            "source_security_group_id": null,
+            "timeouts": null,
+            "to_port": 0,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.eks_node_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "mongodb_bastion",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 22,
+            "id": "sgrule-3778190261",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-0973ba661d63dea6d",
+            "security_group_rule_id": "sgr-0595ccf44c7aef290",
+            "self": false,
+            "source_security_group_id": "sg-067d36e1e7908d6ff",
+            "timeouts": null,
+            "to_port": 22,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.aws_ssm_parameter.mongodb_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "mysql_bastion",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 22,
+            "id": "sgrule-3200064519",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-0019a522518fe2d32",
+            "security_group_rule_id": "sgr-0828aa41baf06b549",
+            "self": false,
+            "source_security_group_id": "sg-067d36e1e7908d6ff",
+            "timeouts": null,
+            "to_port": 22,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.aws_ssm_parameter.mysql_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "public_alb_http",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": [
+              "0.0.0.0/0"
+            ],
+            "description": null,
+            "from_port": 80,
+            "id": "sgrule-2666511031",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-005e2e3b0f809c699",
+            "security_group_rule_id": "sgr-0fa1f599408bd45cb",
+            "self": false,
+            "source_security_group_id": null,
+            "timeouts": null,
+            "to_port": 80,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.public_alb_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "public_alb_https",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": [
+              "0.0.0.0/0"
+            ],
+            "description": null,
+            "from_port": 443,
+            "id": "sgrule-638820080",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-005e2e3b0f809c699",
+            "security_group_rule_id": "sgr-0591919c7760ad42f",
+            "self": false,
+            "source_security_group_id": null,
+            "timeouts": null,
+            "to_port": 443,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.public_alb_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "rabbitmq_bastion",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 22,
+            "id": "sgrule-3424212081",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-063d25e7d65440012",
+            "security_group_rule_id": "sgr-0eca0a1ebcda300f5",
+            "self": false,
+            "source_security_group_id": "sg-067d36e1e7908d6ff",
+            "timeouts": null,
+            "to_port": 22,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.aws_ssm_parameter.rabbitmq_sg_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "redis_bastion",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "cidr_blocks": null,
+            "description": null,
+            "from_port": 22,
+            "id": "sgrule-2521931820",
+            "ipv6_cidr_blocks": null,
+            "prefix_list_ids": null,
+            "protocol": "tcp",
+            "region": "us-east-1",
+            "security_group_id": "sg-0652e212fe32f1453",
+            "security_group_rule_id": "sgr-0064892bb9fd11564",
+            "self": false,
+            "source_security_group_id": "sg-067d36e1e7908d6ff",
+            "timeouts": null,
+            "to_port": 22,
+            "type": "ingress"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "security_group_id"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "source_security_group_id"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ==",
+          "dependencies": [
+            "data.aws_ssm_parameter.bastion_sg_id",
+            "data.aws_ssm_parameter.redis_sg_id"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+

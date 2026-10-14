@@ -24,12 +24,12 @@ resource "aws_iam_role" "bastion" {
     }
   )
 }
-
+#we attach admin level policy
 resource "aws_iam_role_policy_attachment" "bastion" {
   role       = aws_iam_role.bastion.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess" #for this it will not access pods or eks so we use accessentries
 }
-
+#then atatch to instance for this admin level AWS
 resource "aws_iam_instance_profile" "bastion" {
   name = "${local.common_name}-bastion"
   role = aws_iam_role.bastion.name
