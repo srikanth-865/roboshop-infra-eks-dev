@@ -7,22 +7,22 @@ variable "environment" {
 }
 
 variable "eks_version" {
-    default = "1.36"  #LatesVersion
+    default = "1.35"  
 }
 
 
 variable "enable_blue" {
-    default = true
-}
-
-variable "blue_version" {
-    default = "1.36"
-}
-
-variable "enable_green" {
     default = false
 }
 
-variable "green_version" {
+variable "blue_version" { 
+    default = "1.34"
+}
+
+variable "enable_green" {  #we are giving true for create green node
+    default = true
+}
+
+variable "green_version" {  #first running with 1.34 version
     default = "1.35"
 }
