@@ -13,9 +13,9 @@ module "eks" {
       before_compute = true
     }
     kube-proxy             = {}
-    vpc-cni                = {
+    vpc-cni                = {   #it will give network by VPC cidr range to our pods
       before_compute = true
-      enable_network_policy = true
+      enable_network_policy = true  #for networking pod to pod communication within in Namespace
     }
     metrics-server = {}
   }
