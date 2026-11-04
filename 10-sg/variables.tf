@@ -15,6 +15,7 @@ variable "environment"{
         "bastion",
         "eks_control_plane",
         "eks_node",
-        "jenkins", "jenkins_agent"
+        "jenkins", "jenkins_agent",
+        "runner"
   ]
 }  

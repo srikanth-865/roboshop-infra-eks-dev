@@ -16,5 +16,9 @@ variable "domain_name" {
 
 
 variable "jenkins" {
+    default = false #as we completed jenkins so we put false no need to create instance
+}
+
+variable "runner" {
     default = true
 }

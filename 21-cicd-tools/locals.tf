@@ -12,4 +12,5 @@ locals {
     eks_cluster_name = "roboshop"
     #data.aws_ssm_parameter.eks_cluster_name.value
     eks_cluster_arn = "arn:aws:eks:us-east-1:${data.aws_caller_identity.current.account_id}:cluster/${local.eks_cluster_name}"
+    runner_sg_id = data.aws_ssm_parameter.runner_sg_id.value
 }
