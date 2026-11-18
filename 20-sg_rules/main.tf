@@ -36,7 +36,7 @@ resource "aws_security_group_rule" "mysql_bastion_az2" {
   from_port         = 3306
   to_port           = 3306
   protocol          = "tcp"
-  cidr_block = ["10.0.12.0/24"]
+  cidr_blocks = ["10.0.12.0/24"]
   security_group_id = local.mysql_sg_id
 }
 
@@ -45,11 +45,11 @@ resource "aws_security_group_rule" "mysql_bastion_az1" {
   from_port         = 3306
   to_port           = 3306
   protocol          = "tcp"
-  cidr_block = ["10.0.11.0/24"]
+  cidr_blocks = ["10.0.11.0/24"]
   security_group_id = local.mysql_sg_id
 }
 
-resource "aws_security_group_rule" "mysql_bastion" {
+resource "aws_security_group_rule" "mysql_rds_bastion" {
   type              = "ingress"
   from_port         = 3306
   to_port           = 3306
