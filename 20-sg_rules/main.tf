@@ -20,10 +20,39 @@ security_group_id = local.redis_sg_id
 }
 
 # MySQL is allowing connection from bastion on port 22
+#we are allowing the Bastion server to connect to the MySQL server on port 22 (SSH).
 resource "aws_security_group_rule" "mysql_bastion" {
   type              = "ingress"
   from_port         = 22
   to_port           = 22
+  protocol          = "tcp"
+  source_security_group_id = local.bastion_sg_id  #for bastion get acces to run this mysql
+  security_group_id = local.mysql_sg_id #mysql 
+}
+
+## This all for Using RDS in aws for running k8s
+resource "aws_security_group_rule" "mysql_bastion_az2" {
+  type              = "ingress"
+  from_port         = 3306
+  to_port           = 3306
+  protocol          = "tcp"
+  cidr_block = ["10.0.12.0/24"]
+  security_group_id = local.mysql_sg_id
+}
+
+resource "aws_security_group_rule" "mysql_bastion_az1" {
+  type              = "ingress"
+  from_port         = 3306
+  to_port           = 3306
+  protocol          = "tcp"
+  cidr_block = ["10.0.11.0/24"]
+  security_group_id = local.mysql_sg_id
+}
+
+resource "aws_security_group_rule" "mysql_bastion" {
+  type              = "ingress"
+  from_port         = 3306
+  to_port           = 3306
   protocol          = "tcp"
   source_security_group_id = local.bastion_sg_id
   security_group_id = local.mysql_sg_id
